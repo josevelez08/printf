@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 			{
 				if (*(ops[iteradorops].p) == format[iteradorf])
 				{ iteradorf++;
-				contador = ops[iteradorops].f(list);
+				contador = contador + ops[iteradorops].f(list);
 					break; }
 				iteradorops++; } }
 		else
@@ -43,5 +43,5 @@ int _printf(const char *format, ...)
 		contador++;
 	}
 	va_end(list);
-	return (iteradorf - 1);
+	return (contador - 1);
 }
