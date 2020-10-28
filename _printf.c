@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 	{ return (-1); }
-	while (format && format[iteradorf] != '\0')
+	while (format[iteradorf] != '\0')
 	{
 		if (format[iteradorf] == '%')
 		{ iteradorf++;
@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 			{
 				if (iteradorops == 5)
 				{ _putchar('%');
-				iteradorops++; }
+				contador++; }
 				else if (*(ops[iteradorops].p) == format[iteradorf])
 				{ contador = contador + ops[iteradorops].f(list);
 				iteradorf++;
@@ -39,8 +39,9 @@ int _printf(const char *format, ...)
 					break; }
 				iteradorops++; } } else
 		{ _putchar(format[iteradorf]);
-		iteradorf++; }
+		iteradorf++;
 		contador++; }
+	};
 	va_end(list);
-	return (contador - 1);
+	return (contador);
 }
