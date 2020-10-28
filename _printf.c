@@ -22,26 +22,26 @@ int _printf(const char *format, ...)
 	va_start(list, format);
 
 	if (format == NULL)
-	{
-		return (-1);
-	}
+	{ return (-1); }
 	while (format && format[iteradorf] != '\0')
 	{
 		if (format[iteradorf] == '%')
-		{
-			iteradorf++;
-			while (ops[iteradorops].p != '\0')
+		{ iteradorf++;
+			while (iteradorops < 6)
 			{
-				if (*(ops[iteradorops].p) == format[iteradorf])
-				{ iteradorf++;
-				contador = contador + ops[iteradorops].f(list);
+				if (iteradorops == 5)
+				{ _putchar('%');
+				iteradorops++; }
+				else if (*(ops[iteradorops].p) == format[iteradorf])
+				{ contador = contador + ops[iteradorops].f(list);
+				iteradorf++;
+				iteradorops = 6;
 					break; }
-				iteradorops++; } }
-		else
+				iteradorops++; } } else
 		{ _putchar(format[iteradorf]);
 		iteradorf++; }
-		contador++;
-	}
+		contador++; }
+	printf("%d", contador - 1);
 	va_end(list);
 	return (contador - 1);
 }
