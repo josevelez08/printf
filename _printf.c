@@ -15,14 +15,14 @@ int _printf(const char *format, ...)
 		{NULL, NULL}
 	};
 	va_list list;
-	int iteradorf = 0;
-	int iteradorops = 0;
-	int contador = 0;
+	int iteradorf = 0, contador = 0, iteradorops = 0;
 
 	va_start(list, format);
 
 	if (format == NULL)
 	{ return (-1); }
+	if (*format == '%' && format[1] == '\0')
+	{ return	(-1); }
 	while (format[iteradorf] != '\0')
 	{
 		if (format[iteradorf] == '%')
