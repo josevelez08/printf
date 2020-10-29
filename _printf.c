@@ -41,6 +41,7 @@ int _printf(const char *format, ...)
 		{ _putchar(format[iteradorf]);
 		iteradorf++;
 		contador++; }
+		iteradorops = 0;
 	};
 	va_end(list);
 	return (contador);
