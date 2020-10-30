@@ -3,9 +3,8 @@
 _This project is how build our own printf function in C Programming Language
 
 # Description of the function
-The function in the _printf generate an output depending of the format delivered in the file main
-
-The _printf function works with a specification introduced by the character '%' and the letter after of it
+The function in the _printf generate an output depending of the format delivered in the file main, the _printf function works with a specification introduced by the character '%' and the letter after of it.
+The  format  string  is a character string, each conversion specification is introduced by the character %, and ends with a conversion specifier. The arguments must correspond properly with the conversion specifier.
 
 ### Starting
 
