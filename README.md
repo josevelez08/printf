@@ -14,11 +14,11 @@ with: gcc -Wall -Werror -Wextra -pedantic *.c
 
 ### The specification
 
-c: Prints a single character
-s: Prints a string of characters
-d: Prints a signed decimal integer
-i: Prints a signed decimal integer
-%: Prints a symbol of percent
+c: Prints a single character.
+s: Prints a string of characters.
+d: Prints a signed decimal integer.
+i: Prints a signed decimal integer.
+%: Prints a symbol of percent.
 
 Example:
 ```

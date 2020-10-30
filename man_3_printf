@@ -1,4 +1,4 @@
-H man 3 "27 october 2020" "_printf man page"
+.TH _printf 3 "10 October 2020" "1.00" "_printf man page"
 .SH NAME
 .B _printf
 - _printf a formatted string to standard output
@@ -6,6 +6,10 @@ H man 3 "27 october 2020" "_printf man page"
 _printf FORMAT [ARGUMENT]...
 .SH DESCRIPTION
 Print ARGUMENT(s) according to FORMAT
+
+.SH - Return Value
+Upon successful return, these functions return the number of characters printed (excluding the
+null byte used to end output to strings).
 .SH OPTIONS
 .SH The conversion specifier
 .BR c
