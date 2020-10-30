@@ -13,12 +13,13 @@ _You should clone this repository in your machine and after compile it
 with: gcc -Wall -Werror -Wextra -pedantic *.c
 
 ### The specification
-
-c: Prints a single character.
-s: Prints a string of characters.
-d: Prints a signed decimal integer.
-i: Prints a signed decimal integer.
-%: Prints a symbol of percent.
+Specifier|Output|Format
+---|---|---
+c|Prints a single character|%c
+s|Prints a string of characters|%s
+d|Prints a signed decimal integer|%d
+i|Prints a signed decimal integer|%i
+%|Prints a symbol of percent|%%
 
 Example:
 ```
