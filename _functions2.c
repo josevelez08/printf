@@ -27,7 +27,7 @@ int func_i_d(va_list valist)
  */
 char *_itoa(long int num, int base)
 {
-	static char *array = "0123456789";
+	static char *array = "0123456789abcdef";
 	static char buffer[50];
 	char sign = 0;
 	char *ptr;
