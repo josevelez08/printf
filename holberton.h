@@ -11,6 +11,9 @@ char *_itoa(long int num, int base);
 int func_i_d(va_list valist);
 int _printf(const char *format, ...);
 int func_percet(va_list list);
+int print_binary(va_list list);
+int _printf(const char *format, ...);
+int print_bin(va_list arg);
 /**
  * struct op - check the form
  * @p: character to check

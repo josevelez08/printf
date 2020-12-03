@@ -11,6 +11,7 @@ int _printf(const char *format, ...)
 		{"s", func_s},
 		{"i", func_i_d},
 		{"d", func_i_d},
+		{"b", print_bin},
 		{"%", func_percet},
 		{NULL, NULL}
 	};
@@ -18,7 +19,6 @@ int _printf(const char *format, ...)
 	int iteradorf = 0, contador = 0, iteradorops = 0;
 
 	va_start(list, format);
-
 	if (format == NULL)
 	{ return (-1); }
 	if (*format == '%' && format[1] == '\0')
