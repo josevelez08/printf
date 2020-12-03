@@ -12,6 +12,7 @@ int _printf(const char *format, ...)
 		{"i", func_i_d},
 		{"d", func_i_d},
 		{"b", print_bin},
+		{"p", print_address},
 		{"%", func_percet},
 		{NULL, NULL}
 	};
@@ -42,7 +43,7 @@ int _printf(const char *format, ...)
 		iteradorf++;
 		contador++; }
 		iteradorops = 0;
-	};
+		};
 	va_end(list);
 	return (contador);
 }
